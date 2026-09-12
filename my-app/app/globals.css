@@ -1,0 +1,424 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+/* =====================================================
+   SHIVANI - GALLERY / ABOUT / SHARED UI
+   ===================================================== */
+
+/* ---------- Common Page ---------- */
+
+.page-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 48px 0 70px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.page-header p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ---------- Gallery ---------- */
+
+.gallery-intro {
+  max-width: 750px;
+  margin-bottom: 35px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 4px 14px rgba(20, 70, 100, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(20, 70, 100, 0.12);
+}
+
+.gallery-card-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-card-content {
+  padding: 18px;
+}
+
+.gallery-card-title {
+  margin: 10px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.gallery-card-description {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gallery-card-year {
+  margin: 0;
+  color: #71889a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ---------- Type Badge ---------- */
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #e7f4ff;
+  color: #0878c9;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* ---------- About ---------- */
+
+.about-hero {
+  overflow: hidden;
+  margin-bottom: 45px;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 59, 99, 0.92),
+      rgba(7, 59, 99, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1600&q=80")
+      center / cover;
+}
+
+.about-hero-content {
+  padding: 65px 45px;
+  color: white;
+}
+
+.about-hero-content h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.about-hero-content p {
+  max-width: 650px;
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+.about-section {
+  margin-bottom: 55px;
+}
+
+.about-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.about-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(20, 70, 100, 0.05);
+}
+
+.about-card h2 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 22px;
+}
+
+.about-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 12px;
+  color: var(--navy);
+  font-size: 28px;
+}
+
+.section-description {
+  max-width: 800px;
+  margin-bottom: 28px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+
+/* ---------- Methodology ---------- */
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.methodology-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(20, 70, 100, 0.05);
+}
+
+.methodology-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #e6f4ff;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.methodology-card h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 17px;
+}
+
+.methodology-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ---------- Loading ---------- */
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.loading-skeleton {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+}
+
+.skeleton-image {
+  height: 220px;
+  background: #e4edf4;
+  animation: skeleton-loading 1.3s infinite;
+}
+
+.skeleton-content {
+  padding: 18px;
+}
+
+.skeleton-line {
+  width: 100%;
+  height: 13px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background: #e4edf4;
+  animation: skeleton-loading 1.3s infinite;
+}
+
+.skeleton-line.short {
+  width: 30%;
+}
+
+.skeleton-line.medium {
+  width: 70%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+
+/* ---------- Empty / Error ---------- */
+
+.state-container {
+  padding: 55px 20px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+}
+
+.state-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #eaf5ff;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.state-container h2 {
+  margin: 0 0 8px;
+  color: var(--navy);
+}
+
+.state-container p {
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.retry-button {
+  margin-top: 18px;
+  padding: 9px 18px;
+  border: 1px solid var(--primary);
+  border-radius: 7px;
+  background: white;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.retry-button:hover {
+  background: #eef7ff;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skeleton-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .methodology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-container {
+    width: 92%;
+    padding: 35px 0 50px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skeleton-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content {
+    padding: 40px 25px;
+  }
+
+  .gallery-card-image {
+    height: 210px;
+  }
+}
