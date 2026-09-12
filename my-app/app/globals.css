@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7fbff;
+  --foreground: #12304a;
+
+  --primary: #0878c9;
+  --primary-dark: #075b98;
+
+  --surface: #ffffff;
+  --surface-blue: #eef7ff;
+
+  --border: #d9e7f2;
+  --muted: #64798a;
+
+  --navy: #073b63;
 }
 
 @theme inline {
@@ -12,17 +23,19 @@
   --font-mono: var(--font-geist-mono);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 /* =====================================================
    SHIVANI - GALLERY / ABOUT / SHARED UI
