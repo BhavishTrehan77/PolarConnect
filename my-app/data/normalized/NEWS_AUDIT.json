@@ -1,0 +1,702 @@
+{
+  "dataset": "NCPOR news normalized dataset",
+  "records": 30,
+  "rawFileModified": false,
+  "normalizedFile": "data/normalized/news.json",
+  "rssGuidHandling": "The broken RSS endpoint was not used as a live parser. The existing project-generated rssGuid values were preserved under sourceItemKey. Exact NCPOR article URLs are used for provenance.",
+  "contentHandling": "contentFull is null because the current raw snapshot contains no full article body. No article text was invented.",
+  "sourceDescriptionHandling": "sourceDescription is null because the current raw snapshot does not contain a trustworthy verbatim RSS description.",
+  "yearHandling": "year is retained for the planned API filter and derived from publishedDate.",
+  "changes": [
+    {
+      "record": 1,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/872"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-01-the-shebox-portal-2025-06-02"
+      }
+    },
+    {
+      "record": 2,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1039"
+      },
+      "region": {
+        "old": "Indian Ocean",
+        "new": "Indian Ocean"
+      },
+      "theme": {
+        "old": "Geoscience",
+        "new": "Geoscience"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-02-marine-geoscience-2026-08-14"
+      }
+    },
+    {
+      "record": 3,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1040"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Global"
+      },
+      "theme": {
+        "old": "Ocean Science",
+        "new": "Ocean Science"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-03-brics-ocean-polar-2026-08-14"
+      }
+    },
+    {
+      "record": 4,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1042"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-04-independence-day-2026-09-03"
+      }
+    },
+    {
+      "record": 5,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1043"
+      },
+      "region": {
+        "old": "Arctic",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-05-comnap-agm-2026-09-03"
+      }
+    },
+    {
+      "record": 6,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1044"
+      },
+      "region": {
+        "old": "Antarctica",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-06-scar-open-science-2026-09-03"
+      }
+    },
+    {
+      "record": 7,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1045"
+      },
+      "region": {
+        "old": "Antarctica",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-07-scar-delegates-2026-09-03"
+      }
+    },
+    {
+      "record": 8,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1046"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Global"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-08-afops-scar-iasc-2026-09-03"
+      }
+    },
+    {
+      "record": 9,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1047"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Global"
+      },
+      "theme": {
+        "old": "Ocean Science",
+        "new": "Polar & Ocean Science"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-09-polar-deep-ocean-2026-09-03"
+      }
+    },
+    {
+      "record": 10,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1048"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-10-hindi-language-2026-09-03"
+      }
+    },
+    {
+      "record": 11,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1049"
+      },
+      "region": {
+        "old": "Indian Ocean",
+        "new": "Arctic"
+      },
+      "theme": {
+        "old": "Ocean Conservation",
+        "new": "Ocean Conservation"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-11-cleaner-oceans-2026-09-11"
+      }
+    },
+    {
+      "record": 12,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1050"
+      },
+      "region": {
+        "old": "India",
+        "new": "Southern Ocean"
+      },
+      "theme": {
+        "old": "Research",
+        "new": "Ocean Science"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-12-workshop-brainstorming-2026-09-11"
+      }
+    },
+    {
+      "record": 13,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1051"
+      },
+      "region": {
+        "old": "Indian Ocean",
+        "new": "Southern Ocean"
+      },
+      "theme": {
+        "old": "Ocean Conservation",
+        "new": "Ocean Conservation"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-13-plastic-pollution-2026-09-11"
+      }
+    },
+    {
+      "record": 14,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1052"
+      },
+      "region": {
+        "old": "Indian Ocean",
+        "new": "Global Ocean"
+      },
+      "theme": {
+        "old": "Ocean Science",
+        "new": "Ocean Science"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-14-sagar-manthan-2026-09-11"
+      }
+    },
+    {
+      "record": 15,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news",
+        "new": "https://ncpor.res.in/news/view/1053"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-news-15-health-wellbeing-2026-09-11"
+      }
+    },
+    {
+      "record": 16,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1038"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Indian Ocean"
+      },
+      "theme": {
+        "old": "Geoscience",
+        "new": "Geoscience"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-16-gravity-dent-2026-08-07"
+      }
+    },
+    {
+      "record": 17,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1037"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Global"
+      },
+      "theme": {
+        "old": "Research",
+        "new": "Geoscience"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-17-scientific-collaboration-2026-08-07"
+      }
+    },
+    {
+      "record": 18,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1036"
+      },
+      "region": {
+        "old": "India",
+        "new": "Southern Ocean"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Ocean Science"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-18-superannuation-ganesh-chandvale-2026-08-07"
+      }
+    },
+    {
+      "record": 19,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1035"
+      },
+      "region": {
+        "old": "Indian Ocean",
+        "new": "Indian Ocean"
+      },
+      "theme": {
+        "old": "Geoscience",
+        "new": "Geoscience"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-19-submarine-geohazards-2026-08-07"
+      }
+    },
+    {
+      "record": 20,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1034"
+      },
+      "region": {
+        "old": "Global",
+        "new": "Global"
+      },
+      "theme": {
+        "old": "Ocean Governance",
+        "new": "Ocean Governance"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-20-international-seabed-authority-2026-08-07"
+      }
+    },
+    {
+      "record": 21,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1033"
+      },
+      "region": {
+        "old": "Himalaya",
+        "new": "Himalaya"
+      },
+      "theme": {
+        "old": "Climate Research",
+        "new": "Climate Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-21-himalayan-collaboration-2026-08-07"
+      }
+    },
+    {
+      "record": 22,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1032"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Geoscience",
+        "new": "Science Communication"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-22-prithvi-2026-08-07"
+      }
+    },
+    {
+      "record": 23,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1031"
+      },
+      "region": {
+        "old": "Antarctica",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-23-antarctica-beyond-ice-2026-08-07"
+      }
+    },
+    {
+      "record": 24,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1030"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-24-rohini-godbole-2026-07-21"
+      }
+    },
+    {
+      "record": 25,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1029"
+      },
+      "region": {
+        "old": "India",
+        "new": "India"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-25-srinivasa-kumar-tummala-2026-07-21"
+      }
+    },
+    {
+      "record": 26,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1028"
+      },
+      "region": {
+        "old": "Arctic",
+        "new": "Arctic"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-26-arctic-science-2026-07-21"
+      }
+    },
+    {
+      "record": 27,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1027"
+      },
+      "region": {
+        "old": "Antarctica",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Polar Research",
+        "new": "Polar Research"
+      },
+      "summaryShortChanged": false,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-27-india-new-zealand-antarctica-2026-07-02"
+      }
+    },
+    {
+      "record": 28,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1026"
+      },
+      "region": {
+        "old": "India",
+        "new": "Polar Regions"
+      },
+      "theme": {
+        "old": "Research",
+        "new": "Polar Education & Outreach"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-28-ramcharan-vijayaraghavan-2026-07-02"
+      }
+    },
+    {
+      "record": 29,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1025"
+      },
+      "region": {
+        "old": "India",
+        "new": "Antarctica"
+      },
+      "theme": {
+        "old": "Ocean Science",
+        "new": "Ocean Science"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-29-bishakhdatta-gayen-2026-07-02"
+      }
+    },
+    {
+      "record": 30,
+      "sourceUrl": {
+        "old": "https://ncpor.res.in/news/archive",
+        "new": "https://ncpor.res.in/news/view/1024"
+      },
+      "region": {
+        "old": "India",
+        "new": "Arctic"
+      },
+      "theme": {
+        "old": "Institutional",
+        "new": "Institutional"
+      },
+      "summaryShortChanged": true,
+      "contentFull": "set to null because full article body is not present in the current raw snapshot",
+      "sourceDescription": "set to null because the current raw snapshot does not contain the original RSS description",
+      "identifierChange": {
+        "oldField": "rssGuid",
+        "newField": "sourceItemKey",
+        "valuePreserved": "ncpor-archive-30-international-yoga-day-2026-06-25"
+      }
+    }
+  ]
+}
