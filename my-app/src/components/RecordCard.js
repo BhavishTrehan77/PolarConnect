@@ -9,17 +9,21 @@ export default function RecordCard({ record }) {
     id = '1',
     type = 'News',
     title = 'Polar Research Title',
+    summaryShort,
     description = '',
-    pub_date,
     publishedDate,
+    pub_date,
     region = 'Antarctica',
     theme = 'Polar Science',
     imageUrl,
   } = record;
 
-  const displayDate = pub_date
-    ? new Date(pub_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-    : publishedDate || 'Sep 2026';
+  const rawDate = publishedDate || pub_date;
+  const displayDate = rawDate
+    ? (isNaN(new Date(rawDate).getTime())
+        ? rawDate
+        : new Date(rawDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }))
+    : 'Sep 2026';
 
   const typeSlug = (type || 'news').toLowerCase();
   const cardLink = `/record/${typeSlug}/${id}`;
@@ -53,7 +57,7 @@ export default function RecordCard({ record }) {
         </h3>
 
         <p className="record-card-desc">
-          {description || 'Scientific observation and documentation record from the National Centre for Polar and Ocean Research.'}
+          {summaryShort || description || 'Scientific observation and documentation record from the National Centre for Polar and Ocean Research.'}
         </p>
 
         <div className="record-card-footer">
