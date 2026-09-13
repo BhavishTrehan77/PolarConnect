@@ -1,0 +1,126 @@
+/* LOADING SKELETON */
+
+.skeletonCard {
+  overflow: hidden;
+  border: 1px solid #dce8f0;
+  border-radius: 10px;
+  background: white;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e6edf3;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.7),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonImage {
+  height: 180px;
+}
+
+.skeletonContent {
+  padding: 18px;
+}
+
+.skeletonTitle {
+  width: 75%;
+  height: 18px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+
+.skeletonText {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.skeletonTextShort {
+  width: 55%;
+  height: 10px;
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* EMPTY + ERROR */
+
+.stateContainer {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 20px;
+  border: 1px solid #dce8f0;
+  border-radius: 12px;
+  background: white;
+  text-align: center;
+}
+
+.stateIcon,
+.errorIcon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: #eaf5fc;
+  color: #0877c5;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.errorIcon {
+  background: #fff0f0;
+  color: #d64545;
+}
+
+.stateContainer h2 {
+  margin: 0 0 8px;
+  color: #073b68;
+  font-size: 18px;
+}
+
+.stateContainer p {
+  max-width: 400px;
+  margin: 0 0 18px;
+  color: #708398;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.stateButton {
+  padding: 9px 17px;
+  border: 1px solid #0877c5;
+  border-radius: 6px;
+  background: white;
+  color: #0877c5;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.stateButton:hover {
+  background: #eef8ff;
+}
