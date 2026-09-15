@@ -1,0 +1,164 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model News {
+  id                String   @id @default(cuid())
+  title             String
+  slug              String   @unique
+  summaryShort      String?
+  sourceDescription String?
+  contentFull       String?
+  region            String
+  theme             String
+  year              Int
+  type              String?
+  publishedDate     DateTime
+  sourceUrl         String
+  sourceItemKey     String   @unique
+
+  publicSummary PublicSummary?
+  photos        Photo[]
+  tags          NewsTag[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([region])
+  @@index([theme])
+  @@index([year])
+  @@index([type])
+  @@index([region, theme, year])
+}
+
+model Expedition {
+  id          String    @id @default(cuid())
+  name        String
+  description String?
+  region      String
+  startDate   DateTime?
+  endDate     DateTime?
+  sourceUrl   String?
+
+  researchers ExpeditionResearcher[]
+  photos      Photo[]
+  tags        ExpeditionTag[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([region])
+  @@index([startDate])
+}
+
+model Researcher {
+  id          String  @id @default(cuid())
+  name        String
+  affiliation String?
+  bio         String?
+  profileUrl  String?
+
+  expeditions ExpeditionResearcher[]
+  tags        ResearcherTag[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([name])
+}
+
+model Photo {
+  id         String  @id @default(cuid())
+  url        String
+  caption    String?
+  altText    String?
+  credit     String?
+  sourceUrl  String?
+  sourceType String?
+
+  newsId String?
+  news   News?   @relation(fields: [newsId], references: [id], onDelete: Cascade)
+
+  expeditionId String?
+  expedition   Expedition? @relation(fields: [expeditionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([newsId])
+  @@index([expeditionId])
+}
+
+model PublicSummary {
+  id          String   @id @default(cuid())
+  summary     String
+  language    String   @default("en")
+  model       String?
+  generatedAt DateTime @default(now())
+
+  newsId String @unique
+  news   News   @relation(fields: [newsId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Tag {
+  id   String @id @default(cuid())
+  name String @unique
+  slug String @unique
+
+  news        NewsTag[]
+  expeditions ExpeditionTag[]
+  researchers ResearcherTag[]
+
+  createdAt DateTime @default(now())
+}
+
+model NewsTag {
+  newsId String
+  tagId  String
+
+  news News @relation(fields: [newsId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([newsId, tagId])
+  @@index([tagId])
+}
+
+model ExpeditionResearcher {
+  expeditionId String
+  researcherId String
+
+  expedition Expedition @relation(fields: [expeditionId], references: [id], onDelete: Cascade)
+  researcher Researcher @relation(fields: [researcherId], references: [id], onDelete: Cascade)
+
+  @@id([expeditionId, researcherId])
+  @@index([researcherId])
+}
+
+model ExpeditionTag {
+  expeditionId String
+  tagId        String
+
+  expedition Expedition @relation(fields: [expeditionId], references: [id], onDelete: Cascade)
+  tag        Tag        @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([expeditionId, tagId])
+  @@index([tagId])
+}
+
+model ResearcherTag {
+  researcherId String
+  tagId        String
+
+  researcher Researcher @relation(fields: [researcherId], references: [id], onDelete: Cascade)
+  tag        Tag        @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([researcherId, tagId])
+  @@index([tagId])
+}
